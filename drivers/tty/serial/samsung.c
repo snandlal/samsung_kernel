@@ -464,6 +464,7 @@ static void s3c24xx_serial_pm(struct uart_port *port, unsigned int level,
 			clk_disable(ourport->baudclk);
 
 		clk_disable(ourport->clk);
+
 		break;
 
 	case 0:
