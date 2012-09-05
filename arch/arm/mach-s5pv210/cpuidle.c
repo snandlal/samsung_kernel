@@ -13,18 +13,11 @@
 
 #include <linux/kernel.h>
 #include <linux/init.h>
-#include <linux/platform_device.h>
 #include <linux/io.h>
-#include <asm/proc-fns.h>
-#include <asm/cacheflush.h>
-#include <linux/dma-mapping.h>
-
-#include <mach/map.h>
-#include <mach/regs-irq.h>
-#include <mach/regs-clock.h>
-#include <plat/pm.h>
-#include <plat/devs.h>
 #include <linux/cpuidle.h>
+#include <asm/proc-fns.h>
+#include <mach/regs-clock.h>
+
 
 #ifdef CONFIG_S5P_IDLE2
 extern void s5p_init_idle2_work(void);

@@ -1,7 +1,7 @@
 /* arch/arm/mach-s5pv210/include/mach/idle2.h
  *
  * Copyright (c) Samsung Electronics Co. Ltd
- * Copyright (c) 2012 Will Tisdale - <willtisdale@gmail.com>
+ * Copyright (c) 2012 Willie Tisdale - <willtisdale@gmail.com>
  *
  * S5PV210 - IDLE2 external calls
  *
@@ -19,5 +19,6 @@ extern void idle2_uart_active(void);
 extern void idle2_uart_timeout(unsigned long delay);
 extern void idle2_audio_active(bool flag);
 extern void idle2_update_wakeup_stats(void);
+extern void idle2_kill(bool kill, u16 timeout);
 
-#define IDLE2_VERSION 	380
+#define IDLE2_VERSION 	383
